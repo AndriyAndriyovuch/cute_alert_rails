@@ -30,10 +30,9 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
   
 
-1. add to your ```app/assets/config/manifest.js``` next:
+1. add to your ```config/importmap.rb``` next:
 ```
-//= link_tree ../../../vendor/assets/javascript .js
-//= link_tree ../../../vendor/assets/img
+pin "cute_alert", to: "cute_alert.js"
 ```
 
 
@@ -47,9 +46,9 @@ If bundler is not being used to manage dependencies, install the gem by executin
 <%= javascript_include_tag 'cute_alert' %>
 ```
 
-4.  finally add to your ```config/initializers/assets.rb```
+4. Finally add to your ```app/javascript/application.js```:
 ```
-Rails.application.config.assets.paths += Dir["#{Rails.root}/vendor/assets/*"].sort_by { |dir| -dir.size }
+import "cute_alert"
 ```
 
   Done, you're great and now you're able to use these pretty alerts
