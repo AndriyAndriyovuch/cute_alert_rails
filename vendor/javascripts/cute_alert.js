@@ -27,7 +27,7 @@ const cuteAlert = ({
     let src = '';
 
     for (let script of scripts) {
-      if (script.src.includes('cute-alert.js')) {
+      if (script.src.includes('cutealert.js')) {
         src = script.src.substring(0, script.src.lastIndexOf('/'));
       }
     }
@@ -71,7 +71,7 @@ const cuteAlert = ({
             img === undefined
               ? '<img class="alert-img" src="' +
                 src +
-                "/img/" +
+                "/vendor/assets/images/" +
                 type +
                 ".svg" +
                 '" />'
@@ -140,7 +140,7 @@ const cuteToast = ({ type, title, message, timer = 5000,  vibrate = [], playSoun
     let src = '';
 
     for (let script of scripts) {
-      if (script.src.includes('cute-alert.js')) {
+      if (script.src.includes('cutealert.js')) {
         src = script.src.substring(0, script.src.lastIndexOf('/'));
       }
     }
@@ -162,7 +162,7 @@ const cuteToast = ({ type, title, message, timer = 5000,  vibrate = [], playSoun
       <div>
         <div class="toast-frame">
           <div class="toast-body">
-            <img class="toast-body-img" src="${src}/img/${type}.svg" />'
+            <img class="toast-body-img" src="/assets/${type}.svg" />
             <div class="toast-body-content">
               <span class="toast-title">${title}</span>
               <span class="toast-message">${message}</span>
@@ -223,4 +223,3 @@ if(url){
     }
   }
 }
-
