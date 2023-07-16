@@ -1,7 +1,7 @@
 
 # Cute Alert Rails
 
-  This is a gem made of https://github.com/gustavosmanc/cute-alert alertі library to make your Rails app more user friendly
+  This is a gem made of https://github.com/gustavosmanc/cute-alert alerts library to make your Rails app more user friendly
 
 
 ![img](https://camo.githubusercontent.com/ddf94f7a9a24b022af797e104f8bad56f03c8e3af7a48d427095140fdc47c4fb/68747470733a2f2f692e696d6775722e636f6d2f66754b62346c472e706e67)
