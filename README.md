@@ -52,7 +52,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 Rails.application.config.assets.paths += Dir["#{Rails.root}/vendor/assets/*"].sort_by { |dir| -dir.size }
 ```
 
-  Done, you're great and now yu're able to use this pretty alerts
+  Done, you're great and now you're able to use these pretty alerts
 
 ## Development
 
@@ -72,7 +72,7 @@ and you'll see little alert, if all works well
 
 You can call it everywhere you want
 
-Also a good practice will be use Stimulus controller (if you use stimulus) to call this alerts:
+Also a good practice will be to use Stimulus controller (if you use stimulus) to call this alerts:
 1. Generate controlller:
 ```
 rails g stimulus cutealert
@@ -99,7 +99,7 @@ export  default  class  extends  Controller  {
 	}
 }
 ``` 
-3. Add this to youe button:
+3. Add this to your button:
 ```
 <div  data-controller="cutealert">
 	<%=  form_with  url:  add_product_in_cart_path(product)  do  |f|  %>
@@ -114,7 +114,7 @@ export  default  class  extends  Controller  {
 
 Done, you've made it, enjoy
 
-for full js documention visit https://github.com/gustavosmanc/cute-alert 
+P.S. For full js documentation visit https://github.com/gustavosmanc/cute-alert 
   
 
 ## Contributing
