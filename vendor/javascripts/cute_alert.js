@@ -71,7 +71,7 @@ const cuteAlert = ({
             img === undefined
               ? '<img class="alert-img" src="' +
                 src +
-                "/vendor/assets/images/" +
+                "/assets/" +
                 type +
                 ".svg" +
                 '" />'
