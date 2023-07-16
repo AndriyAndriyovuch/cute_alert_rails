@@ -37,7 +37,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 ```
 
 
-2. add to your ```app/assets/config/manifest.js``` next:
+2. add to your ```app/assets/stylesheets/application.css``` next:
 ```
 *= require cute_alert
 ```
